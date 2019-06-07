@@ -1,0 +1,34 @@
+# {{{packageName}}}
+
+{{#link}}
+{{> packageLinksLine}}
+{{/link}}
+
+
+This is a bundle of npm packages {{purpose}}.
+
+You don't have look for npm packages to do it.
+
+# Installation
+
+Just install only one package!
+
+```
+$ yarn add{{#dev}} -D {{/dev}}{{^dev}} {{/dev}}{{{packageName}}}
+```
+
+# Package List
+
+You can use the following the packages without `yarn add <the following package>`.
+
+{{#dependencies}}
+### {{name}}: {{version}}
+
+{{#link}}
+{{> packageLinksLine}}
+{{/link}}
+
+
+{{description}}
+
+{{/dependencies}}

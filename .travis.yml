@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - stable
+  - lts/*
+install:
+  - travis_retry npm install
+script:
+  - yarn run lint
+  - yarn run test:coverage
+  - yarn global add codecov
+after_success:
+  - codecov
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: yarn run build && yarn run semantic-release

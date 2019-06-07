@@ -1,0 +1,56 @@
+{
+  "name": "@mitsuru793/document-generator-package-bundle",
+  "version": "0.1.0",
+  "description": "Document generator for package bundle",
+  "author": "mitsuru793 <mitsuru793@gmail.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mitsuru793/node-document-generator-package-bundle.git"
+  },
+  "homepage": "https://github.com/mitsuru793/node-document-generator-package-bundle",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "keywords": [
+    "package",
+    "bundle",
+    "document",
+    "generator"
+  ],
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint 'src/**/*.ts'",
+    "lint:fix": "yarn run lint --fix",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "build": "webpack"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "@mitsuru793/package-bundle-semantic-release-npm": "^1.0.0",
+    "@mitsuru793/package-bundle-typescript-lint": "^0.1.0",
+    "@mitsuru793/package-bundle-typescript-webpack": "^0.1.0",
+    "@types/mustache": "^0.8.32",
+    "eslint-plugin-jest": "^22.6.4",
+    "husky": "^2.3.0",
+    "package-json": "^6.3.0"
+  },
+  "dependencies": {
+    "dot-prop": "^5.0.0",
+    "mustache": "^3.0.1"
+  }
+}
