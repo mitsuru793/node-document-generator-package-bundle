@@ -1,5 +1,6 @@
 {
   "name": "@mitsuru793/document-generator-package-bundle",
+  "version": "1.0.0",
   "description": "Document generator for package bundle",
   "author": "mitsuru793 <mitsuru793@gmail.com>",
   "license": "MIT",
