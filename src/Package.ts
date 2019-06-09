@@ -1,6 +1,5 @@
-import { log, packageLinks } from './util'
+import { fetchPackageJson, log, packageLinks } from './util'
 import { FullMetadata } from 'package-json'
-import fetchPackageJson = require('package-json')
 
 export default class Package {
   public readonly name: string
@@ -52,7 +51,7 @@ export default class Package {
 
     const promises = Object.keys(packages).map(
       async (packageName): Promise<Package> => {
-        const pkg = await fetchPackageJson(packageName, { fullMetadata: true })
+        const pkg = await fetchPackageJson(packageName)
         return Package.parsePackageJson(pkg)
       }
     )
