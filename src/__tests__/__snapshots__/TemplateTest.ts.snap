@@ -53,7 +53,7 @@ Find a file or directory by walking up parent directories
 [Github](https://github.com/jprichardson/node-fs-extra) /
 [Homepage](https://github.com/jprichardson/node-fs-extra)
 
-fs-extra contains methods that aren&#39;t included in the vanilla Node.js fs package. Such as mkdir -p, cp -r, and rm -rf.
+fs-extra contains methods that aren't included in the vanilla Node.js fs package. Such as mkdir -p, cp -r, and rm -rf.
 
 ### mustache: 3.0.1
 
