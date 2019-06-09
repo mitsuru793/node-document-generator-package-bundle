@@ -12,7 +12,7 @@ $ yarn add -D @mitsuru793/document-generator-package-bundle
 # Write template
 
 ```javascript
-import Template from './Template'
+import {Template} from '@mitsuru793/document-generator-package-bundle'
 
 async function main(): Promise<void> {
   // Pass a purpose of bundle as 1st argument.
@@ -21,7 +21,7 @@ async function main(): Promise<void> {
   // Fetch npm package of dependencies internal.
   // So you have to use await.
   const text = await Template.readme('to play music')
-  console.loglog(text)
+  console.log(text)
 }
 
 main()
