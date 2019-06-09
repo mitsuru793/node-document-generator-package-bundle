@@ -39,6 +39,14 @@ the complete solution for node.js command-line programs
 
 Get, set, or delete a property from a nested object using a dot path
 
+### find-up: 4.0.0
+
+[Npm](https://www.npmjs.com/package/find-up) /
+[Github](https://github.com/sindresorhus/find-up) /
+[Homepage](https://github.com/sindresorhus/find-up#readme)
+
+Find a file or directory by walking up parent directories
+
 ### fs-extra: 8.0.1
 
 [Npm](https://www.npmjs.com/package/fs-extra) /

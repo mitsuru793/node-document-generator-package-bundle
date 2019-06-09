@@ -2,13 +2,16 @@ import * as path from 'path'
 import fse from 'fs-extra'
 import { FullMetadata } from 'package-json'
 import packageJson = require('package-json')
+import * as findUp from 'find-up'
 
 const root = path.join(__dirname, '../')
 
 export function readSelfPackageJson(): FullMetadata {
-  const file = path.join(root, 'package.json')
-  const raw = fse.readFileSync(file)
-  return JSON.parse(raw.toString())
+  const json = findUp.sync('package.json')
+  if (!json) {
+    throw new Error('Not found package.json.')
+  }
+  return fse.readJsonSync(json)
 }
 
 export async function fetchPackageJson(
