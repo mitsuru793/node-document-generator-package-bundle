@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/mitsuru793/node-document-generator-package-bundle/compare/v1.0.0...v1.1.0) (2019-06-09)
+
+
+### Bug Fixes
+
+* add version to package.json ([5229b24](https://github.com/mitsuru793/node-document-generator-package-bundle/commit/5229b24))
+
+
+### Features
+
+* add bin command ([b6f7daa](https://github.com/mitsuru793/node-document-generator-package-bundle/commit/b6f7daa))
+
 # 1.0.0 (2019-06-09)
 
 
