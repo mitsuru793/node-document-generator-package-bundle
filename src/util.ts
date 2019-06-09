@@ -15,8 +15,16 @@ export function readSelfPackageJson(): FullMetadata {
 }
 
 export async function fetchPackageJson(
-  packageName: string
+  packageName: string,
+  useCache: boolean = false
 ): Promise<FullMetadata> {
+  const fetchPkg = (): Promise<FullMetadata> =>
+    packageJson(packageName, { fullMetadata: true })
+
+  if (!useCache) {
+    return await fetchPkg()
+  }
+
   const cache = path.join(root, '/.cache/fetched-package.json')
   fse.ensureFileSync(cache)
 
@@ -24,11 +32,12 @@ export async function fetchPackageJson(
   if (!packages) {
     packages = {}
   }
+
   if (packages[packageName]) {
     return packages[packageName]
   }
 
-  packages[packageName] = await packageJson(packageName, { fullMetadata: true })
+  packages[packageName] = await fetchPkg()
   fse.writeJsonSync(cache, packages)
   return packages[packageName]
 }

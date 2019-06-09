@@ -3,10 +3,18 @@ import { readSelfPackageJson, readTemplate } from './util'
 import Package from './Package'
 
 export default class Template {
-  public static async readme(purpose: string): Promise<string> {
+  public static async readme(
+    purpose: string,
+    option: { useCache?: boolean } = {}
+  ): Promise<string> {
+    const useCache = option.useCache || false
+
     const selfFull = readSelfPackageJson()
     const pkg = Package.parsePackageJson(selfFull)
-    const dependencies = (await Package.fetchDependencies(selfFull)).sort()
+    const dependencies = (await Package.fetchDependencies(
+      selfFull,
+      useCache
+    )).sort()
 
     const template = readTemplate('README.md')
     const partials = {

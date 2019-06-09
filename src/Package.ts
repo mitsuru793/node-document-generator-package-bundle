@@ -41,7 +41,10 @@ export default class Package {
     })
   }
 
-  public static async fetchDependencies(pkg: FullMetadata): Promise<Package[]> {
+  public static async fetchDependencies(
+    pkg: FullMetadata,
+    useCache: boolean = false
+  ): Promise<Package[]> {
     const packages = pkg.dependencies as {
       readonly [name: string]: string
     } | null
@@ -51,7 +54,7 @@ export default class Package {
 
     const promises = Object.keys(packages).map(
       async (packageName): Promise<Package> => {
-        const pkg = await fetchPackageJson(packageName)
+        const pkg = await fetchPackageJson(packageName, useCache)
         return Package.parsePackageJson(pkg)
       }
     )
