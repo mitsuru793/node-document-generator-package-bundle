@@ -6,7 +6,7 @@ export default class Template {
   public static async readme(purpose: string): Promise<string> {
     const selfFull = readSelfPackageJson()
     const pkg = Package.parsePackageJson(selfFull)
-    const dependencies = await Package.fetchDependencies(selfFull)
+    const dependencies = (await Package.fetchDependencies(selfFull)).sort()
 
     const template = readTemplate('README.md')
     const partials = {
