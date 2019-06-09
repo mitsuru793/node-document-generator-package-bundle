@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/mitsuru793/node-document-generator-package-bundle/compare/v1.1.1...v1.1.2) (2019-06-09)
+
+
+### Bug Fixes
+
+* escape html in template ([5ae374f](https://github.com/mitsuru793/node-document-generator-package-bundle/commit/5ae374f))
+
 ## [1.1.1](https://github.com/mitsuru793/node-document-generator-package-bundle/compare/v1.1.0...v1.1.1) (2019-06-09)
 
 
