@@ -1,4 +1,5 @@
 const path = require('path')
+const CopyPlugin = require('copy-webpack-plugin')
 
 const basePath = __dirname
 
@@ -23,7 +24,5 @@ module.exports = {
   module: {
     rules: [{test: /.tsx?$/, loader: 'ts-loader'}]
   },
-  devServer: {
-    contentBase: path.join(basePath, 'dist')
-  },
+  plugins: [new CopyPlugin([{from: 'template/', to: 'template/'}])]
 }
