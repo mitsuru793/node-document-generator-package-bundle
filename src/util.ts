@@ -18,13 +18,16 @@ export async function fetchPackageJson(
   fse.ensureFileSync(cache)
 
   let packages = fse.readJsonSync(cache, { throws: false })
-  if (packages && packages[packageName]) {
+  if (!packages) {
+    packages = {}
+  }
+  if (packages[packageName]) {
     return packages[packageName]
   }
 
   packages[packageName] = await packageJson(packageName, { fullMetadata: true })
   fse.writeJsonSync(cache, packages)
-  return packages
+  return packages[packageName]
 }
 
 export function link(text: string, url: string): string {
