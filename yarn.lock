@@ -397,23 +397,23 @@
     semantic-release "^15.13.12"
     semantic-release-cli "^5.1.1"
 
-"@mitsuru793/package-bundle-typescript-lint@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@mitsuru793/package-bundle-typescript-lint/-/package-bundle-typescript-lint-0.1.0.tgz#b4b304ddeedde85cc1766afe04b0feead380148f"
+"@mitsuru793/package-bundle-typescript-lint@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@mitsuru793/package-bundle-typescript-lint/-/package-bundle-typescript-lint-1.0.1.tgz#c7adaf9e682ae084c6cd1e2252f1f307c043f115"
   dependencies:
     "@typescript-eslint/eslint-plugin" "^1.9.0"
     eslint "^5.16.0"
     eslint-config-prettier "^4.3.0"
     eslint-plugin-prettier "^3.1.0"
     prettier "^1.17.1"
-    typescript "3.4"
+    typescript "~3.4.5"
 
-"@mitsuru793/package-bundle-typescript-webpack@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@mitsuru793/package-bundle-typescript-webpack/-/package-bundle-typescript-webpack-0.1.0.tgz#0dcd065dec85f264ad11bce8fb84762a4834429a"
+"@mitsuru793/package-bundle-typescript-webpack@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@mitsuru793/package-bundle-typescript-webpack/-/package-bundle-typescript-webpack-1.0.1.tgz#471ce8a7038834e5e8058620515230e9e8b8584e"
   dependencies:
     ts-loader "^6.0.2"
-    typescript "^3.4.5"
+    typescript "~3.4.5"
     webpack "^4.32.2"
     webpack-cli "^3.3.2"
 
@@ -2690,9 +2690,9 @@ dot-prop@^4.1.0:
   dependencies:
     is-obj "^1.0.0"
 
-dot-prop@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-5.0.0.tgz#64b7968af349c3a9f966aa12658dbd5829f6b953"
+dot-prop@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-5.0.1.tgz#e26c283bd1f10aab01e782371a751fb52cc3cb1c"
   dependencies:
     is-obj "^1.0.0"
 
@@ -3680,9 +3680,9 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
-husky@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-2.3.0.tgz#8b78ed24d763042df7fd899991985d65a976dd13"
+husky@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-2.4.0.tgz#1bac7c44588f6e91f808b72efc82d24a57194f36"
   dependencies:
     cosmiconfig "^5.2.0"
     execa "^1.0.0"
@@ -7623,13 +7623,9 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typescript@3.4:
+typescript@~3.4.5:
   version "3.4.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.4.5.tgz#2d2618d10bb566572b8d7aad5180d84257d70a99"
-
-typescript@^3.4.5:
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.1.tgz#ba72a6a600b2158139c5dd8850f700e231464202"
 
 uglify-js@^3.1.4:
   version "3.6.0"
