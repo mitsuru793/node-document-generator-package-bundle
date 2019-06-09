@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/mitsuru793/node-document-generator-package-bundle/compare/v1.1.2...v1.1.3) (2019-06-09)
+
+
+### Bug Fixes
+
+* not cache fetching package.json when not test ([7b61b2b](https://github.com/mitsuru793/node-document-generator-package-bundle/commit/7b61b2b))
+
 ## [1.1.2](https://github.com/mitsuru793/node-document-generator-package-bundle/compare/v1.1.1...v1.1.2) (2019-06-09)
 
 
