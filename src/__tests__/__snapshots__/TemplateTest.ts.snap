@@ -23,6 +23,14 @@ $ yarn add -D @mitsuru793/document-generator-package-bundle
 
 You can use the following the packages without \`yarn add <the following package>\`.
 
+### dot-prop: 5.0.1
+
+[Npm](https://www.npmjs.com/package/dot-prop) /
+[Github](https://github.com/sindresorhus/dot-prop) /
+[Homepage](https://github.com/sindresorhus/dot-prop#readme)
+
+Get, set, or delete a property from a nested object using a dot path
+
 ### fs-extra: 8.0.1
 
 [Npm](https://www.npmjs.com/package/fs-extra) /
@@ -31,19 +39,11 @@ You can use the following the packages without \`yarn add <the following package
 
 fs-extra contains methods that aren&#39;t included in the vanilla Node.js fs package. Such as mkdir -p, cp -r, and rm -rf.
 
-### fs-extra: 8.0.1
+### mustache: 3.0.1
 
-[Npm](https://www.npmjs.com/package/fs-extra) /
-[Github](https://github.com/jprichardson/node-fs-extra) /
-[Homepage](https://github.com/jprichardson/node-fs-extra)
+[Npm](https://www.npmjs.com/package/mustache) /
+[Github](https://github.com/janl/mustache) /
+[Homepage](https://github.com/janl/mustache.js)
 
-fs-extra contains methods that aren&#39;t included in the vanilla Node.js fs package. Such as mkdir -p, cp -r, and rm -rf.
-
-### fs-extra: 8.0.1
-
-[Npm](https://www.npmjs.com/package/fs-extra) /
-[Github](https://github.com/jprichardson/node-fs-extra) /
-[Homepage](https://github.com/jprichardson/node-fs-extra)
-
-fs-extra contains methods that aren&#39;t included in the vanilla Node.js fs package. Such as mkdir -p, cp -r, and rm -rf."
+Logic-less {{mustache}} templates with JavaScript"
 `;

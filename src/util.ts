@@ -17,14 +17,14 @@ export async function fetchPackageJson(
   const cache = path.join(root, '/.cache/fetched-package.json')
   fse.ensureFileSync(cache)
 
-  let pkg = fse.readJsonSync(cache, { throws: false })
-  if (pkg) {
-    return pkg
+  let packages = fse.readJsonSync(cache, { throws: false })
+  if (packages && packages[packageName]) {
+    return packages[packageName]
   }
 
-  pkg = await packageJson(packageName, { fullMetadata: true })
-  fse.writeJsonSync(cache, pkg)
-  return pkg
+  packages[packageName] = await packageJson(packageName, { fullMetadata: true })
+  fse.writeJsonSync(cache, packages)
+  return packages
 }
 
 export function link(text: string, url: string): string {
