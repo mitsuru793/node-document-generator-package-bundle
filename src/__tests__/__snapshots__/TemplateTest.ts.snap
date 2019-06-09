@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Template can render readme 1`] = `
+"# @mitsuru793/document-generator-package-bundle
+
+[Npm](https://www.npmjs.com/package/@mitsuru793/document-generator-package-bundle) /
+[Github](https://github.com/mitsuru793/node-document-generator-package-bundle) /
+[Homepage](https://github.com/mitsuru793/node-document-generator-package-bundle)
+
+This is a bundle of npm packages to play music.
+
+You don't have look for npm packages to do it.
+
+# Installation
+
+Just install only one package!
+
+\`\`\`
+$ yarn add -D @mitsuru793/document-generator-package-bundle
+\`\`\`
+
+# Package List
+
+You can use the following the packages without \`yarn add <the following package>\`.
+
+### fs-extra: 8.0.1
+
+[Npm](https://www.npmjs.com/package/fs-extra) /
+[Github](https://github.com/jprichardson/node-fs-extra) /
+[Homepage](https://github.com/jprichardson/node-fs-extra)
+
+fs-extra contains methods that aren&#39;t included in the vanilla Node.js fs package. Such as mkdir -p, cp -r, and rm -rf.
+
+### fs-extra: 8.0.1
+
+[Npm](https://www.npmjs.com/package/fs-extra) /
+[Github](https://github.com/jprichardson/node-fs-extra) /
+[Homepage](https://github.com/jprichardson/node-fs-extra)
+
+fs-extra contains methods that aren&#39;t included in the vanilla Node.js fs package. Such as mkdir -p, cp -r, and rm -rf.
+
+### fs-extra: 8.0.1
+
+[Npm](https://www.npmjs.com/package/fs-extra) /
+[Github](https://github.com/jprichardson/node-fs-extra) /
+[Homepage](https://github.com/jprichardson/node-fs-extra)
+
+fs-extra contains methods that aren&#39;t included in the vanilla Node.js fs package. Such as mkdir -p, cp -r, and rm -rf."
+`;

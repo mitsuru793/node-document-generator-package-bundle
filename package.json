@@ -45,10 +45,13 @@
     "@mitsuru793/package-bundle-typescript-lint": "^0.1.0",
     "@mitsuru793/package-bundle-typescript-webpack": "^0.1.0",
     "@types/fs-extra": "^7.0.0",
+    "@types/jest": "^24.0.13",
     "@types/mustache": "^0.8.32",
     "eslint-plugin-jest": "^22.6.4",
     "husky": "^2.3.0",
-    "package-json": "^6.3.0"
+    "jest": "^24.8.0",
+    "package-json": "^6.3.0",
+    "ts-jest": "^24.0.2"
   },
   "dependencies": {
     "dot-prop": "^5.0.0",
