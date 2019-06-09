@@ -11,6 +11,14 @@ $ yarn add -D @mitsuru793/document-generator-package-bundle
 
 # Write template
 
+## Command
+
+```
+document-generator-package-bundle render:readme 'purpose for bundle'
+```
+
+## Script File
+
 ```javascript
 import {Template} from '@mitsuru793/document-generator-package-bundle'
 
